@@ -1,5 +1,7 @@
 # home-assistant-securitas
-A custom component for Home Assistant for Securitas Home Alarm
+A custom component for Home Assistant for Securitas Home Alarm.
+
+The original component was developed by @nwiborg, continued development by @vlumikero.
 
 The platform contains:
 * Switch for arming Securitas Home Alarm in Away Mode
