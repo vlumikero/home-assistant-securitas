@@ -5,7 +5,7 @@ import logging
 import voluptuous as vol
 
 from homeassistant.util import convert
-from homeassistant.components.switch import (SwitchDevice)
+from homeassistant.components.switch import (SwitchEntity)
 from homeassistant.const import (STATE_OFF, STATE_ON, CONF_NAME, CONF_SWITCHES)
 
 #import requests
@@ -32,7 +32,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     add_devices([SecuritasSwitch(hass, name + " Home Mode", client, STATE_ALARM_ARMED_HOME)])
 
 
-class SecuritasSwitch(SwitchDevice):
+class SecuritasSwitch(SwitchEntity):
 
     def __init__(self, hass, name, client, mode=STATE_ALARM_ARMED_AWAY):
         _LOGGER.info("Initialized Securitas SWITCH %s", name)

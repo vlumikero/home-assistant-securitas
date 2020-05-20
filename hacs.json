@@ -1,5 +1,6 @@
 {
   "name": "Securitas Home",
   "render_readme": "true",
-  "country": "SE"
+  "country": "SE",
+  "homeassistant": "0.110.1"
 }
