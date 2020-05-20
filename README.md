@@ -1,5 +1,5 @@
 # home-assistant-securitas
-A custom component for Home Assistant for Securitas Home Alarm.
+A custom component for Home Assistant for Securitas Home Alarm, for alarms bought in Sweden before 2018-12-01.
 
 The original component was developed by @nwiborg, continued development by @vlumikero.
 
