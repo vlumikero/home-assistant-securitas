@@ -121,7 +121,7 @@ class SecuritasClientAPI(object):
         _LOGGER.debug("Get Securitas alarm state: %s", self._state)
         _LOGGER.debug("Target Securitas alarm state: %s", self._target_state)
         
-        if self._state == '':
+        if self._target_state == '':
                 return self._state
         elif self._state == self._target_state:
         	return self._state
