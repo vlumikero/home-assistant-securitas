@@ -59,9 +59,9 @@ def setup(hass, config):
         'client': client,
         'name': name
     }
-    hass.helpers.discovery.load_platform('sensor', DOMAIN, {}, config)
-    hass.helpers.discovery.load_platform('switch', DOMAIN, {}, config)
-    hass.helpers.discovery.load_platform('alarm_control_panel', DOMAIN, {}, config)
+    discovery.load_platform(hass, 'sensor', DOMAIN, {}, config)
+    discovery.load_platform(hass, 'switch', DOMAIN, {}, config)
+    discovery.load_platform(hass, 'alarm_control_panel', DOMAIN, {}, config)
 
     return True
 
