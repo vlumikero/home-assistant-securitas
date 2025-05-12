@@ -11,10 +11,6 @@ from homeassistant.const import (STATE_OFF, STATE_ON, CONF_NAME, CONF_SWITCHES)
 #import requests
 import time
 
-from homeassistant.components.alarm_control_panel.const import (
-    SUPPORT_ALARM_ARM_AWAY,
-    SUPPORT_ALARM_ARM_HOME,
-)
 from homeassistant.const import (
     STATE_ALARM_ARMED_AWAY,
     STATE_ALARM_ARMED_HOME,
@@ -44,10 +40,10 @@ class SecuritasAlarmPanel(AlarmControlPanelEntity):
         self._client = client
         self.update()
 
-    @property
-    def supported_features(self) -> int:
+    #@property
+    #def supported_features(self) -> int:
         """Return the list of supported features."""
-        return SUPPORT_ALARM_ARM_HOME | SUPPORT_ALARM_ARM_AWAY
+    #    return SUPPORT_ALARM_ARM_HOME | SUPPORT_ALARM_ARM_AWAY
 
     def update(self):
         _LOGGER.debug("Updated Securitas SWITCH %s", self._name)
